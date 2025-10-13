@@ -1,0 +1,68 @@
+/* Estilos generales y Tema Claro (por defecto) */
+body {
+    background-color: #f0f2f5; /* Un gris muy claro para el fondo */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+    transition: background-color 0.3s ease;
+}
+
+.service-box {
+    background-color: #f8f9fa; /* Color de fondo de los servicios */
+    border: 1px solid #dee2e6;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+/* --- TEMA OSCURO --- */
+body.dark-mode {
+    background-color: #121212; /* Fondo general oscuro */
+    color: #e0e0e0; /* Color de texto principal */
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e; /* Fondo de la tarjeta oscuro */
+    border-color: #444;
+}
+
+body.dark-mode .card-header {
+    background-color: #333 !important; /* Encabezado un poco más claro que el fondo */
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .text-muted {
+    color: #a0a0a0 !important; /* Texto secundario más claro */
+}
+
+body.dark-mode .service-box {
+    background-color: #333; /* Cajas de servicio oscuras */
+    border-color: #555;
+    color: #e0e0e0;
+}
+
+body.dark-mode .form-control {
+    background-color: #333;
+    border-color: #555;
+    color: #e0e0e0;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #888;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #333;
+    border-color: #0d6efd; /* Color primario de Bootstrap */
+    color: #e0e0e0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+body.dark-mode hr {
+    border-top: 1px solid #444;
+}
