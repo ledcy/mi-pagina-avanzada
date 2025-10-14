@@ -23,10 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const envioInfo = document.getElementById("button");
     const contacto = document.getElementById("contacto")
+
     envioInfo.addEventListener("click", function(){
-        contacto.reset();
+
+        if(contacto.value){
+            alert("Rellene los campos");
+            return;
+        }
         alert("Se ha enviado la información");
-        
+        contacto.reset();
     })
 
 });
