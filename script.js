@@ -25,11 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const contacto = document.getElementById("contacto")
 
     envioInfo.addEventListener("click", function(){
-
-        if(contacto.value){
-            alert("Rellene los campos");
-            return;
-        }
         alert("Se ha enviado la información");
         contacto.reset();
     })
